@@ -29,4 +29,22 @@ notes.post('/', (req, res) => {
   }
 });
 
+// GET Route for a single note
+notes.get('/api/notes/:id', (req, res) => {
+  if (req.params.id) {
+    console.info(`${req.method} request received to get a single a `);
+    const id = req.params.id;
+    for (let i = 0; i < s.length; i++) {
+      const current = s[i];
+      if (current.id === id) {
+        res.json(current);
+        return;
+      }
+    }
+    res.status(404).send(' not found');
+  } else {
+    res.status(400).send('ID not provided');
+  }
+});
+
 module.exports = notes;
