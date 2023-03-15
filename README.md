@@ -13,7 +13,7 @@
   
   ## Installation
 
-  * To deploy application, go to [My Heroku Project](https://vast-brook-40513.herokuapp.com/)
+  * To deploy application, go to [My Heroku Project](https://whispering-lake-09940.herokuapp.com/)
 
   ## Usage
 
