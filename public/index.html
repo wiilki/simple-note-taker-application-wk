@@ -1,29 +1,56 @@
-<!DOCTYPE html>
-<html lang="en-US">
-
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Note Taker</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f8f3">
+  <meta name="description" content="Stillnote is your quiet place to capture, collect, and organize ideas. Beautiful notes, zero noise.">
+  <title>Stillnote — A quieter place for your thoughts</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
-
-<body>
-  <nav class="navbar bg-info">
-    <a class="navbar-brand text-light p-3" href="/">Note Taker
-    </a>
-  </nav>
-  <div class="container">
-    <div style="margin-top: 80px;" class="text-center p-5 mb-4 bg-light">
-      <h1 class="display-4">Note Taker <span role="img" aria-label="Memo">📝</span></h1>
-      <h4 class="mt-4">Take notes with Express</h4>
-      <a class="btn btn-primary btn-lg mt-4" href="/notes" role="button">Get Started</a>
+<body class="landing-page">
+<svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 2 9 4v6c0 5.5-3.6 8.8-9 10-5.4-1.2-9-4.5-9-10V6l9-4Z"/><path d="m8 12 3 3 5-6"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.7"/><path d="m16 16 5 5"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2.8 2.9 5.9 6.5 1-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-1L12 2.8Z"/></symbol>
+  <symbol id="i-note" viewBox="0 0 24 24"><path d="M7 3h8l5 5v11a2 2 0 0 1-2 2H7a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3Z"/><path d="M14 3v6h6M8 13h8M8 17h6"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-7-7 7 7-7 7"/></symbol>
+</svg>
+<header class="landing-nav">
+  <a class="brand" href="/" aria-label="Stillnote home"><span class="brand-symbol"><span></span><span></span><span></span><span></span></span><span>stillnote<span class="brand-period">.</span></span></a>
+  <nav class="landing-links" aria-label="Main navigation"><a href="#features">Why Stillnote</a><a href="#how-it-works">How it works</a><a href="/notes" class="nav-cta">Open workspace &nbsp;↗</a></nav>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <div class="hero-kicker">THINK CLEARER. LIVE LIGHTER.</div>
+      <h1>A little more space for <em>what matters.</em></h1>
+      <p class="hero-subtitle">A thoughtful home for your notes, ideas, and everything in between. Less clutter, more clarity — just you and your thoughts.</p>
+      <div class="hero-actions"><a class="button-dark" href="/notes"><svg><use href="#i-plus"></use></svg>Start writing — it's free</a><a class="hero-link" href="#features">Explore the little details <svg><use href="#i-arrow"></use></svg></a></div>
+      <p class="hero-note"><svg><use href="#i-check"></use></svg>No account. No noise. Notes stay in your browser.</p>
     </div>
-  </div>
-  <script src="./js/index.js"></script>
+    <div class="preview-stage" aria-label="Preview of the Stillnote notes workspace">
+      <div class="preview-window">
+        <div class="preview-side"><div class="preview-side-logo">stillnote<span>.</span></div><div class="preview-side-line"></div><div class="preview-side-line dim"></div><div class="preview-side-line dim short"></div><div class="preview-side-line dim"></div><div class="preview-side-line dim short"></div></div>
+        <div class="preview-list"><span class="preview-label">YOUR SPACE</span><div class="preview-head">All notes</div><div class="preview-item active"><div class="preview-chip"></div><div class="preview-text long"></div><div class="preview-text"></div><div class="preview-text short"></div></div><div class="preview-item"><div class="preview-chip"></div><div class="preview-text long"></div><div class="preview-text"></div><div class="preview-text short"></div></div><div class="preview-item"><div class="preview-chip"></div><div class="preview-text long"></div><div class="preview-text short"></div></div></div>
+        <div class="preview-editor"><div class="preview-topline"></div><h3>Make room for good things.</h3><p class="preview-pencil">Personal · Today</p><div class="preview-body-line"></div><div class="preview-body-line"></div><div class="preview-body-line"></div><div class="preview-body-line"></div></div>
+      </div>
+      <div class="floating-card"><span class="floating-icon"><svg><use href="#i-check"></use></svg></span><span><strong>All changes saved</strong><small>One less thing to think about.</small></span></div>
+    </div>
+  </section>
+  <div class="benefit-strip" id="how-it-works"><div class="benefit"><svg><use href="#i-check"></use></svg>Thoughtfully minimal</div><div class="benefit"><svg><use href="#i-check"></use></svg>Auto-saved as you write</div><div class="benefit"><svg><use href="#i-check"></use></svg>Yours to keep, export, or delete</div></div>
+  <section class="feature-section" id="features"><div class="section-kicker">THE LITTLE THINGS, DONE WELL</div><h2>Everything you need.<br>Nothing you don't.</h2>
+    <div class="feature-grid">
+      <article class="feature-card"><span class="feature-card-icon"><svg><use href="#i-note"></use></svg></span><h3>Thoughts, captured.</h3><p>Open a page and simply start. Your words save automatically, so the important part is getting them down.</p></article>
+      <article class="feature-card"><span class="feature-card-icon"><svg><use href="#i-search"></use></svg></span><h3>Find your way back.</h3><p>Search across your notes, build collections, and keep favorites or pinned ideas a little closer.</p></article>
+      <article class="feature-card"><span class="feature-card-icon"><svg><use href="#i-shield"></use></svg></span><h3>Your space stays yours.</h3><p>Notes live on this device, without accounts or trackers. Export a backup whenever you like.</p></article>
+    </div>
+  </section>
+  <section class="landing-bottom"><h2>What's on your mind?</h2><p>Give that thought somewhere good to land.</p><a class="button-dark" href="/notes"><svg><use href="#i-plus"></use></svg>Open your workspace</a></section>
+</main>
+<footer class="landing-footer"><span class="brand brand-light"><span class="brand-symbol"><span></span><span></span><span></span><span></span></span><span>stillnote<span class="brand-period">.</span></span></span><small>Made for clearer thinking. Stored in your browser, not in the cloud.</small></footer>
 </body>
-
 </html>
